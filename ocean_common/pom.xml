@@ -6,11 +6,36 @@
         <artifactId>oceangroupsite</artifactId>
         <groupId>com.ocean.group</groupId>
         <version>1.0-SNAPSHOT</version>
+
         <relativePath>../oceangroupsite/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ocean_common</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Jackson Json处理工具包 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <!-- 时间操作组件 -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time.version}</version>
+        </dependency>
+
+        <!-- Apache工具组件 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+    </dependencies>
+
 
     <name>Maven</name>
     <!-- FIXME change it to the project's website -->
